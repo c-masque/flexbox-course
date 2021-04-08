@@ -96,7 +96,7 @@
     }
 
     .my-name-wrapper .links .link:hover {
-        
+        background: none;
     }
 
     .primary-link-wrapper {
@@ -123,6 +123,18 @@
         justify-content: flex-end;
     }
 
+    .user-icon {
+        width: 1em;
+        padding: 0 10px;
+        display: flex;
+        align-self: center;
+    }
+
+    .user-icon img {
+        width: 40px;
+        filter: invert(1);
+    }
+
     @media only screen and (max-width: 800px) {
     
         .settings-icon {
@@ -136,7 +148,7 @@
         }
 
         .my-name-wrapper .links .link {
-            margin: -20px;
+            margin: -10px;
         }
 
         .lefthand .primary-link-wrapper {
@@ -159,17 +171,25 @@
     <div class="heading-wrapper">
 
         <div class="lefthand">
+
             <div class="my-name-wrapper">
+
                 <div class="settings-icon">
                     <a href="#" class="hamburger">
                         <i class="fas fa-bars"></i>
                     </a>
                 </div>
+
+                <div class="user-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Font_Awesome_5_solid_user-circle.svg/991px-Font_Awesome_5_solid_user-circle.svg.png" alt="your icon">
+                </div>
+
                 <div class="links">
                     <div class="link">
                         <a href="#">Maud</a>
                     </div>
                 </div>
+
             </div>
 
             <div class="primary-link-wrapper">
@@ -194,4 +214,5 @@
     </div>
     
 </body>
+
 </html>
